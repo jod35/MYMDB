@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <ul>
+            
+            {% for movie in object_list %}
+                <li>{{ movie }}</li>
+            (%empty%)
+                <li>No movies Found</li>
+            {% endfor %}
+                
+        </ul>
+        <p>
+            using http?
+            {{ request.is_secure|yesno }}
+        </p>
+    </body>
+</html>
